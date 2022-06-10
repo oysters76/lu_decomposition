@@ -190,7 +190,8 @@ function getMathJax(A, U, E_s) {
 
     res += ' = ' + getMatrixMathJax(T) + '$$';
   }
-  res += '$$U = ' + getMatrixMathJax(U) + '$$';
+  res += '$$U = ' + getMatrixMathJax(T) + '$$';
+  U = T.map((arr) => arr.slice());
   res += '$$ L = ';
   while (E_stack.length != 0) {
     res += E_stack.pop() + '^{-1}' + (E_stack.length != 0 ? '.' : '');
