@@ -1,0 +1,57 @@
+<html>
+
+<head>
+        <title>LU Decomposition</title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+                crossorigin="anonymous">
+        <style>
+                input {
+                        width: 100%;
+                }
+
+                #matrixA {
+                        border-color: black;
+                        border-style: solid;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="container">
+                <div class="row">
+                        <div class="col col-lg-6">
+                                <div class="row">
+                                        <h1 style="margin-top:50px">LU decomposition calculator</h1>
+                                        <small>By <a href="https://twitter.com/chiratnissanka" class="link-info"
+                                                        target=”_blank”>@chirathnissanka</a></small>
+                                        <small>Check out <a class="link-info" target=”_blank”
+                                                        href="https://en.wikipedia.org/wiki/LU_decomposition">wiki</a></small>
+                                </div>
+                                <div class="row" style="margin-top: 50px">
+                                        <h3>Your input matrix A: </h3>
+                                </div>
+                                <div class="row">
+                                        <div class="col col-sm-5">
+                                                <table class="table table-bordered" id="matrixA">
+
+                                                </table>
+                                        </div>
+                                        <div class="col col-sm-3"><button class="btn btn-success"
+                                                        onclick="solve()">Solve!</button></div>
+
+                                </div>
+                        </div>
+                        <div class="col col-lg-6" style="margin-top: 150px;height: 100%;overflow: auto;" id="resultDiv">
+
+                        </div>
+                </div>
+        </div>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="decomp.js"></script>
+</body>
+
+</html>
